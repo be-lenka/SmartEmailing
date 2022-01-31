@@ -7,7 +7,7 @@ Easy way to interact with SmartEmailing API from PHP
 The best way to install this component is using [Composer](http://getcomposer.org/):
 
 ```sh
-$ composer require belenka/smartemailing
+$ composer require be-lenka/smartemailing
 ```
 
 Then it is required to add the following lines to config.neon:
