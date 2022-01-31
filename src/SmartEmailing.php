@@ -208,6 +208,9 @@ class SmartEmailing
     {
         $contact = [
             'emailaddress' => $email,
+            'name' => $name,
+            'surname' => $surname,
+            'language' => $language
         ];
 
         if (is_array($contactLists)) {
@@ -215,10 +218,7 @@ class SmartEmailing
             foreach ($contactLists as $id => $status) {
                 $contact['contactlists'][] = [
                     'id' => $id,
-                    'status' => $status,
-                    'name' => $name,
-                    'surname' => $surname,
-                    'language' => $language
+                    'status' => $status
                 ];
             }
         }
