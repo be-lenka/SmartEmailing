@@ -1,16 +1,16 @@
 # SmartEmailing
 
-Easy way to interact with SmartEmailing API from PHP
+Easy way to interact with SmartEmailing API from **Nette PHP Framework**
 
 ## Installation
 
 The best way to install this component is using [Composer](http://getcomposer.org/):
 
 ```sh
-$ composer require be-lenka/smartemailing
+composer require be-lenka/smartemailing
 ```
 
-Then it is required to add the following lines to config.neon:
+Then it is required to add the following lines to `config.neon`:
 
 ```neon
 parameters:
@@ -19,7 +19,7 @@ parameters:
 		token: <smartemailing_api_token>
 
 services:
-	- BeLenka\SmartEmailing(%smartemailing.username%, %smartemailing.token%)
+	- belenka\SmartEmailing(%smartemailing.username%, %smartemailing.token%)
 ```
 
 ## Usage
